@@ -7,7 +7,7 @@
     <context:component-scan base-package="com.library" />
     <!--<context:component-scan base-package="net.test" />-->
     <context:annotation-config/>
-    <context:property-placeholder location="classpath:database.properties"/>
+    <!--<context:property-placeholder location="classpath:database.properties"/>-->
 
     <bean id="userRepository" class="com.library.dao.impl.JDBCUserRepositoryImpl">
         <constructor-arg ref="dataSource"/>
